@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint &middot; For Keith &middot; AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Keith Kalfas by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint &middot; For Keith">
+<meta property="og:description" content="Part of the three-thing plan and less-than-7-day install built for @keithkalfas by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Keith &middot; AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - Keith Kalfas</h1>
+  </header>
+
+  
+<p><strong>Architecture deliverable</strong> · Full funnel diagram, phase mapping, tech stack, integration points.</p>
+<hr />
+<h2>Funnel Diagram (top to bottom)</h2>
+<pre><code>ENTRY POINTS
+├── @keithkalfas IG (~36K) ─────────────────────────────┐
+├── TikTok @keithkalfas (mirror audience) ──────────────┤
+├── YouTube @keith-kalfas (10+ yr evergreen catalogue) ─┤
+├── The Untrapped Podcast (multi-platform, hundreds ep) ┤
+├── X / Facebook (lighter surface) ──────────────────────┤
+├── Books (Amazon · 4 titles) ──────────────────────────┤
+└── Cold ads (Phase 4) - Meta + YouTube ────────────────┘
+                                ↓
+                       LINK IN BIO ROUTER
+                                ↓
+              ┌──── LANDSCAPING BUSINESS TRAP SCORE ─────┐
+              │     (ScoreApp / Typeform · 12 questions) │
+              │     Captures email + segments + traps    │
+              └────────────────────┬─────────────────────┘
+                                   ↓
+                          ┌────────┴─────────┐
+                          ↓                  ↓
+                   Score 71-100         Score 0-70
+                   (Cohort-ready)       (Bundle / Alliance feeder)
+                          ↓                  ↓
+              COHORT WAITLIST + APP        7-TOUCH SEGMENTED NURTURE
+              (4-min Typeform, year-       (Welcome flow, 14 days,
+              round application)            by stage + trap type)
+                          ↓                          ↓
+                LANDSCAPING OPERATOR COHORT     UNTRAPPED ALLIANCE ($97/mo)
+                (8 weeks · 20-25 seats ·         + BUSINESS BUNDLE ($347)
+                Standard / Premium tiers)        + INDIVIDUAL COURSES
+                          ↓                          ↓
+                  COHORT GRAD HANDOFF           Stays in lifecycle
+                          ↓
+                  ┌───────┴───────┐
+                  ↓               ↓
+            1:1 Coaching     Alliance Renewal
+            Call Slot        (Alliance discount
+            (premium         for cohort grads)
+            continuation)
+
+PARALLEL TRACK
+The Untrapped Alliance stays live as the recurring $97/mo membership for
+operators still in community-stage. Cohort grads renew at a discount.
+The 1:1 coaching call stays live as the premium continuation - not retired.
+The book stack stays live as the cold-traffic / Amazon top-of-funnel.
+</code></pre>
+<h2>Phase Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Phase</th>
+<th>Owner</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landscaping Operator Cohort landing page</td>
+<td>1</td>
+<td>AG1</td>
+<td>Custom HTML or Kajabi</td>
+</tr>
+<tr>
+<td>VSL hero asset</td>
+<td>1</td>
+<td>AG1 + Keith</td>
+<td>Wistia + existing channel kit</td>
+</tr>
+<tr>
+<td>Stripe + payment + email auto-trigger</td>
+<td>1</td>
+<td>AG1</td>
+<td>Stripe + Kajabi</td>
+</tr>
+<tr>
+<td>Cohort application Typeform</td>
+<td>1</td>
+<td>AG1</td>
+<td>Typeform</td>
+</tr>
+<tr>
+<td>Pixel + GA4 + retargeting tags</td>
+<td>1</td>
+<td>AG1</td>
+<td>Meta Pixel + GA4 + GTM</td>
+</tr>
+<tr>
+<td>Landscaping Business Trap Score</td>
+<td>2</td>
+<td>AG1</td>
+<td>ScoreApp or Typeform Logic</td>
+</tr>
+<tr>
+<td>7-touch segmented nurture sequence</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit (or Keith's existing Kajabi-native email)</td>
+</tr>
+<tr>
+<td>Bio link router</td>
+<td>2</td>
+<td>AG1</td>
+<td>Beacons or Linktree Pro</td>
+</tr>
+<tr>
+<td>14-day welcome flow</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Podcast end-card refresh + mid-roll reads</td>
+<td>2</td>
+<td>AG1 + Keith</td>
+<td>Riverside / Auphonic</td>
+</tr>
+<tr>
+<td>YouTube end-card refresh on top 20 evergreens</td>
+<td>2</td>
+<td>AG1 + Keith</td>
+<td>YouTube Studio</td>
+</tr>
+<tr>
+<td>Cohort Waitlist one-page hub</td>
+<td>2</td>
+<td>AG1</td>
+<td>Custom HTML</td>
+</tr>
+<tr>
+<td>UTM attribution stack</td>
+<td>2</td>
+<td>AG1</td>
+<td>GTM + GA4</td>
+</tr>
+<tr>
+<td>Photoshoot + B-roll (yard + cohort-specific)</td>
+<td>3</td>
+<td>AG1 + photographer</td>
+<td>Local studio + Keith's actual yard / shop</td>
+</tr>
+<tr>
+<td>40-hook content calendar</td>
+<td>3</td>
+<td>AG1 + Keith</td>
+<td>Notion + Frame.io</td>
+</tr>
+<tr>
+<td>6-episode Cohort Module Walkthrough mini-series</td>
+<td>3</td>
+<td>AG1 + Keith</td>
+<td>Riverside + Final Cut Pro</td>
+</tr>
+<tr>
+<td>Cohort flagship YouTube long-form</td>
+<td>3</td>
+<td>AG1 + Keith</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>Meta + YouTube ads</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta Ads Manager + Google Ads</td>
+</tr>
+<tr>
+<td>Retargeting campaigns</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta + Google + GTM</td>
+</tr>
+<tr>
+<td>Lookalike audiences</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta CAPI + audience builder</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech Stack (recommended, swappable - keeps Keith's existing stack where possible)</h2>
+<ul>
+<li><strong>CMS / Cohort host:</strong> Kajabi (Keith already uses Kajabi for the Academy, the Alliance, and existing courses - the cohort plugs in as a new Kajabi cohort product). Skool or Circle as the community channel if the Alliance currently uses one.</li>
+<li><strong>Landing pages:</strong> Kajabi-native (fast, integrates with Keith's existing email + course stack) or custom HTML on the AG1 side for the cohort landing if Kajabi templating is too constraining</li>
+<li><strong>Email:</strong> Kajabi-native (keeps the email stack consolidated with the Alliance + courses) or Kit / ConvertKit if a deeper segmentation layer is wanted</li>
+<li><strong>Quiz / Scorecard:</strong> ScoreApp (preferred for 0-100 scoring + trap-type segmentation logic) or Typeform with Logic Jumps</li>
+<li><strong>Payment:</strong> Stripe (cohort) + Kajabi-native for the existing Alliance and courses</li>
+<li><strong>Video host:</strong> Wistia (cohort landing) + YouTube (long-form continues to live there) + Loom (1:1 audit calls in cohort Premium tier)</li>
+<li><strong>Analytics:</strong> GA4 + Meta Pixel + Microsoft Clarity (heatmaps on landing)</li>
+<li><strong>CRM:</strong> Kajabi-native CRM (keeps the cohort + Alliance + bundle data in one place) or HubSpot Starter if a real CRM is wanted</li>
+<li><strong>Community / Cohort Channel:</strong> Skool (low overhead, mobile-friendly, what most trades cohorts use) or Circle. Keith's existing Alliance community gets a separate Skool space for cohort actives.</li>
+<li><strong>Scheduling:</strong> Calendly (default for office hours) or Cal.com</li>
+<li><strong>Project / build:</strong> Notion (handover-friendly) + Linear (engineering)</li>
+</ul>
+<h2>Integration Points</h2>
+<ol>
+<li>Scorecard → Email · ScoreApp triggers Kit / Kajabi-native on quiz completion with score tag + trap-type tag + stage tag</li>
+<li>Email → Cohort · Kit / Kajabi triggers cohort enrolment on Stripe purchase webhook</li>
+<li>Email → Alliance · same trigger, different product webhook</li>
+<li>Cohort → 1:1 Coaching Call · cohort grads on Premium tier get a Calendly link routed to Keith's existing coaching call calendar with cohort-grad tag attached</li>
+<li>Cohort → Alliance renewal · cohort grads get an Alliance discount code on cohort completion (Alliance retention lift)</li>
+<li>Stan-style / coaching call confirmation page → Cohort waitlist · 1:1 call bookers who are cohort-fit get added to the cohort waitlist</li>
+<li>All events → GA4 + Meta Pixel via GTM · captures full funnel attribution</li>
+<li>Podcast end-card + show-notes link → scorecard with UTM tag <code>?utm_source=podcast&amp;utm_medium=show-notes&amp;utm_campaign=trap-score</code></li>
+<li>YouTube end-card + description link → scorecard with UTM tag <code>?utm_source=youtube&amp;utm_medium=end-card&amp;utm_campaign=trap-score</code></li>
+</ol>
+<h2>Owner Map</h2>
+<ul>
+<li><strong>Keith:</strong> filming (VSL + photoshoot day + 6-episode cohort mini-series), weekly group call on the live cohort cycle, scheduled office-hours blocks (2x monthly), top-line decisions on copy + brand, mid-roll podcast reads for next 10 episodes</li>
+<li><strong>AG1 (Andrei):</strong> everything else - landing page build, scorecard setup, email writing, automation, cohort onboarding flow, weekly reporting, ads management, YouTube end-card refresh on top 20 evergreens, show-notes template refresh</li>
+</ul>
+<h2>Failure Modes + Mitigations</h2>
+<ul>
+<li><strong>VSL filming delays</strong> → use existing YouTube long-form (<code>zpnOhq67U20</code> "How to Start a Landscaping Business with NO Money | 50% Profit Margins" or <code>tOUv60GebJQ</code> "10,000 Landscaping Business Startups") as Phase 1 placeholder; replace with custom cohort-specific VSL by end of Phase 1</li>
+<li><strong>Kajabi templating constraint on the cohort landing</strong> → AG1 builds a custom HTML landing on the AG1 side with the Kajabi cohort enrolment link embedded, redirects from Kajabi when bandwidth opens</li>
+<li><strong>Cohort cap of 20-25 filling slowly on first cycle</strong> → run a smaller pilot cohort (12 seats) at the standard tier price to lock the format before opening cap to 25</li>
+<li><strong>Alliance cannibalisation concern</strong> → frame the cohort explicitly as "the implementation upgrade for Alliance members" and route cohort grads back to the Alliance at a renewal discount - the two are complementary, not competing</li>
+<li><strong>1:1 coaching call concern</strong> → frame the 1:1 as the cohort-grad premium continuation - cohort grads on Premium tier get priority 1:1 bookings, which protects the high-touch lane while feeding it</li>
+<li><strong>Podcast end-card reads cross legacy episodes</strong> → only update next 10 forward episodes; do not back-edit hundreds of old episodes - the show-notes template refresh handles the back-catalogue passively</li>
+<li><strong>Scorecard answer fatigue</strong> → 12 questions is the cap. Test 8-question version against 12-question version after 30 days; pick whichever converts higher email opt-in</li>
+</ul>
+<h2>KPIs (90-day)</h2>
+<ul>
+<li>Phase 1 · Landscaping Operator Cohort landing live · 12-25 cohort applications in first 30 days from existing audience</li>
+<li>Phase 2 · 1,500+ scorecard completions in first 90 days · 5-8% IG-to-email conversion from the existing 36K IG base</li>
+<li>Phase 2 · Podcast end-card refresh on next 10 episodes · 800+ scorecard completions attributed to podcast in first 90 days</li>
+<li>Phase 3 · 6-episode Cohort Module Walkthrough mini-series shipped · 40+ short-form posts published from the hook bank</li>
+<li>Phase 4 · Meta CPL under $15 for scorecard opt-in · cohort CAC under $400 (mid-tier price band absorbs $200-500 CAC comfortably)</li>
+<li>Year-1 floor target · $300K-$960K incremental on top of existing Alliance + courses + 1:1 coaching call revenue</li>
+</ul>
+
+  <footer class="doc-footer">
+    <a href="index.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-05-16 &middot; Built for @keithkalfas</div>
+  </footer>
+</article>
+
+</body>
+</html>
